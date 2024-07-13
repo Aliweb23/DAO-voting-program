@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAO Voting System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>DAO Voting System</h1>
+        <div id="proposal-form">
+            <h2>Create a Proposal</h2>
+            <input type="text" id="proposal-description" placeholder="Proposal Description">
+            <button onclick="createProposal()">Submit Proposal</button>
+        </div>
+        <div id="vote-form">
+            <h2>Vote on Proposals</h2>
+            <select id="proposal-list"></select>
+            <button onclick="voteFor()">Vote For</button>
+            <button onclick="voteAgainst()">Vote Against</button>
+        </div>
+        <div id="results">
+            <h2>Results</h2>
+            <ul id="results-list"></ul>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/solana-web3.js/1.30.2/solana-web3.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
